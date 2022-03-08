@@ -1,5 +1,5 @@
 {
-  "name": "digitable-storybook",
+  "name": "@digitable-team/web-ui-components-storybook",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
