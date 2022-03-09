@@ -1,4 +1,4 @@
-# web-ui-components
+# Digitable-team / web-ui-components
 ```shell
 cd digitable-storybook
 
