@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Digitable-team/web-ui-components/issues"
   },
-  "homepage": "https://github.com/Digitable-team/web-ui-components#readme"
+  "homepage": "https://github.com/Digitable-team/web-ui-components#readme",
+  "dependencies": {
+    "commitlint": "^16.2.1"
+  }
 }
