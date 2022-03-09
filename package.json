@@ -20,6 +20,7 @@
     "branch-naming-check": "^1.0.2",
     "commitlint": "^16.2.1",
     "lint-staged": "^12.3.5",
+    "prettier": "^2.5.1",
     "stylelint": "^14.5.3"
   }
 }
