@@ -1,0 +1,166 @@
+{
+    "env": {
+      "browser": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "airbnb-typescript",
+      "airbnb/hooks",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/recommended-requiring-type-checking",
+      "plugin:css-modules/recommended",
+      "plugin:prettier/recommended",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript"
+    ],
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": ["tsconfig.json", "tsconfig.eslint.json"],
+      "ecmaFeatures": {
+        "jsx": true
+      },
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "settings": {
+      "react": {
+        "version": "detect"
+      },
+      "import/resolver": {
+        "node": {
+          "paths": ["."]
+        }
+      }
+    },
+    "plugins": ["react", "@typescript-eslint", "import", "css-modules", "github"],
+    "rules": {
+      "jsx-a11y/media-has-caption": "off",
+      "import/order": [
+        "error",
+        {
+          "newlines-between": "always-and-inside-groups",
+          "groups": ["builtin", "external", "internal", "parent", "sibling"],
+          "pathGroups": [
+            {
+              "pattern": "react",
+              "group": "external",
+              "position": "before"
+            },
+            {
+              "pattern": "**/*.+(svg|png|jpg|jpeg|mp3|mp4|tiff|webp|gif)",
+              "group": "sibling",
+              "position": "after"
+            },
+            {
+              "pattern": "./*.scss",
+              "group": "sibling",
+              "position": "after"
+            }
+          ],
+          "pathGroupsExcludedImportTypes": [],
+          "alphabetize": {
+            "order": "asc"
+          }
+        }
+      ],
+      "no-restricted-imports": [
+        "error",
+        {
+          "paths": [
+            {
+              "name": "./",
+              "message": "Use import from non-index file in the same directory"
+            },
+            {
+              "name": ".",
+              "message": "Use import from non-index file in the same directory"
+            }
+          ]
+        }
+      ],
+      "no-plusplus": "off",
+      "no-underscore-dangle": "off",
+      "no-restricted-syntax": "off",
+      "class-methods-use-this": "off",
+      "default-case": "off",
+      "array-callback-return": "off",
+      "consistent-return": "off",
+      "no-console": [
+        2,
+        {
+          "allow": ["info", "warn", "error"]
+        }
+      ],
+      "max-len": [
+        "error",
+        {
+          "code": 120,
+          "ignoreUrls": true,
+          "ignoreRegExpLiterals": true
+        }
+      ],
+      "import/prefer-default-export": "off",
+      "import/no-extraneous-dependencies": "off",
+      "react/require-default-props": "off",
+      "react/button-has-type": "off",
+      "react/jsx-no-target-blank": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/destructuring-assignment": "off",
+      "react/no-danger": "off",
+      "react/no-array-index-key": "off",
+      "react/state-in-constructor": "off",
+      "jsx-a11y/anchor-is-valid": "off",
+      "jsx-a11y/img-redundant-alt": "off",
+      "jsx-a11y/iframe-has-title": "off",
+      "jsx-a11y/label-has-associated-control": "off",
+      "css-modules/no-unused-class": [
+        2,
+        {
+          "camelCase": true
+        }
+      ],
+      "css-modules/no-undef-class": [
+        2,
+        {
+          "camelCase": true
+        }
+      ],
+      "@typescript-eslint/no-floating-promises": "off",
+      "@typescript-eslint/restrict-template-expressions": "off",
+      "@typescript-eslint/no-unused-expressions": "off",
+      "@typescript-eslint/no-shadow": "off",
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/unbound-method": "off",
+      "@typescript-eslint/prefer-regexp-exec": "off",
+      "@typescript-eslint/camelcase": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/no-var-requires": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_"
+        }
+      ],
+      "@typescript-eslint/no-use-before-define": [
+        "error",
+        {
+          "functions": false
+        }
+      ],
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "selector": "variable",
+          "format": ["camelCase", "UPPER_CASE", "snake_case", "PascalCase"],
+          "leadingUnderscore": "allow"
+        }
+      ]
+    }
+  }
