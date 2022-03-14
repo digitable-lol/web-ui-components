@@ -1,0 +1,30 @@
+{
+  "name": "@digitable-team/web-ui-components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digitable-team/web-ui-components.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Digitable-team/web-ui-components/issues"
+  },
+  "homepage": "https://github.com/Digitable-team/web-ui-components#readme",
+  "dependencies": {
+    "branch-naming-check": "^1.0.2",
+    "commitlint": "^16.2.1",
+    "lint-staged": "^12.3.5",
+    "prettier": "^2.5.1",
+    "sass": "^1.49.9",
+    "stylelint": "^14.5.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
