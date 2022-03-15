@@ -1,8 +1,9 @@
-# web-ui-components
+# Digitable-team / web-ui-components
+```shell
+cd digitable-storybook
 
-`cd digitable-storybook`  
-
-`npm start`  
+npm start
   
-`npm run storybook`
+npm run storybook
+```
 
