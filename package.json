@@ -18,6 +18,7 @@
   "homepage": "https://github.com/Digitable-team/web-ui-components#readme",
   "dependencies": {
     "branch-naming-check": "^1.0.2",
+    "chromatic": "^6.5.3",
     "commitlint": "^16.2.1",
     "lint-staged": "^12.3.5",
     "prettier": "^2.5.1",
