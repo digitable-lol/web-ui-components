@@ -59,7 +59,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
     "tag": "latest",
-    "access": "restricted"
+    "access": "public"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
