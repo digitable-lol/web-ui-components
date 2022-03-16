@@ -17,13 +17,49 @@
   },
   "homepage": "https://github.com/Digitable-team/web-ui-components#readme",
   "dependencies": {
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/npm": "^9.0.1",
     "branch-naming-check": "^1.0.2",
     "chromatic": "^6.5.3",
     "commitlint": "^16.2.1",
     "lint-staged": "^12.3.5",
     "prettier": "^2.5.1",
     "sass": "^1.49.9",
+    "semantic-release": "^19.0.2",
     "stylelint": "^14.5.3"
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
+  "release": {
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      {
+        "path": "@semantic-release/git",
+        "assets": [
+          "package.json",
+          "package-lock.json",
+          "CHANGELOG.md"
+        ],
+        "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
+      }
+    ]
+  },
+  "files": [
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com",
+    "tag": "latest",
+    "access": "restricted"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
