@@ -135,16 +135,9 @@ jobs:
       - name: Get lint results
         run: npm run lint
 
-  test:
-    timeout-minutes: 5
-    name: Tests waiter
-    # No need to wait for deepsource test and report
-    needs: [test-build, test-lint]
-    runs-on: ubuntu-latest
-
   publish:
     name: Publish a new version of package via Semantic Release
-    needs: [test, pre_ci]
+    needs: [test-lint, test-build, pre_ci]
     timeout-minutes: 5
     if: ${{ github.ref == 'refs/heads/master' }}
 
