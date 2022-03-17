@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Digitable-team/web-ui-components/compare/v1.0.0...v1.1.0) (2022-03-17)
+
+
+### Features
+
+* bump a new repo for lib ([3dbd379](https://github.com/Digitable-team/web-ui-components/commit/3dbd37974852efb60330e30a10c933c00effb5db))
+
 # 1.0.0 (2022-03-17)
 
 
