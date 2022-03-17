@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Digitable-team/web-ui-components/compare/v1.1.0...v1.2.0) (2022-03-17)
+
+
+### Features
+
+* **WUC:** Deploy Storybook ([#28](https://github.com/Digitable-team/web-ui-components/issues/28)) ([5a67d02](https://github.com/Digitable-team/web-ui-components/commit/5a67d02dcf7becee32874504b7f2690e0a21b8c6))
+
 # [1.1.0](https://github.com/Digitable-team/web-ui-components/compare/v1.0.0...v1.1.0) (2022-03-17)
 
 
