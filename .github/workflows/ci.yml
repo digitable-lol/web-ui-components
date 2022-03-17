@@ -175,8 +175,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx semantic-release
 
-  deploy:
-    name: Deploy a new components for storybook
+  deploy-storybook:
+    name: Update storybook
     needs: [test-lint, test-build, pre_ci]
     timeout-minutes: 5
     if: ${{ github.ref == 'refs/heads/master' }}
@@ -204,16 +204,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
 
-      - name: Build project
-        run: npm run build
+      - name: Build storybook
+        run: npm run build-storybook
       
       - name: Deploy storybook
         run: npm run deploy-storybook
-
-      - name: Semantic release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-          NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: npx semantic-release
