@@ -246,25 +246,3 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx semantic-release
-
-  comment_pr_badge:
-    timeout-minutes: 5
-    name: Comment on PR with generated badge
-    needs: [pre_ci, badge]
-    if: ${{ github.actor != 'dependabot[bot]' && github.event_name == 'pull_request' && !contains(needs.pre_ci.outputs.commit_message, '#comment-badge') }}
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Generate comment file with test coverage badge
-        env:
-          BADGE: ${{ needs.badge.outputs.markdown }}
-        run: |
-          echo "Badge: ${BADGE}"
-          echo "${BADGE}" > output.md
-      - name: Comment PR with test coverage badge
-        uses: machine-learning-apps/pr-comment@1.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          path: output.md

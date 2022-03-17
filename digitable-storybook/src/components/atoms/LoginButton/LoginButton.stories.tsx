@@ -13,6 +13,8 @@ const Template: ComponentStory<typeof LoginButton> = (args) => <LoginButton {...
 export const Primary = Template.bind({});
 
 Primary.args = {
-  text: 'Войти'
+  text: 'Войти',
+  color: 'black',
+  backgroundColor: 'green'
 };
 
