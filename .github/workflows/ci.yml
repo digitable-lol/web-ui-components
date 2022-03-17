@@ -47,6 +47,7 @@ jobs:
         run: |
           COMMIT_MESSAGE="${COMMIT_PUSH:-$(git log --format=%B -n 1 HEAD^2)}"
           echo "::set-output name=commit_message::${COMMIT_MESSAGE}"
+
       - name: Extract branch name
         id: extract_branch
         run: |
@@ -60,6 +61,7 @@ jobs:
               EXPORT_VALUE="${TMP_GITHUB_REF}"
           fi
           echo "##[set-output name=branch;]${EXPORT_VALUE}"
+
   pre-tests:
     name: Install dependencies (if needed)
     runs-on: ubuntu-latest
@@ -79,6 +81,7 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
             ${{ runner.OS }}-build
+
       - name: npm install
         run: npm ci
 
@@ -103,48 +106,9 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
             ${{ runner.OS }}-build
+
       - name: npm build
         run: npm run build
-
-  test-code:
-    timeout-minutes: 5
-    needs: [check-secrets, pre-tests]
-    name: Test code and generate test coverage value
-    runs-on: ubuntu-latest
-
-    # Map a step output to a job output
-    outputs:
-      coverage: ${{ steps.coverage.outputs.coverage }}
-      coverage-rounded-display: ${{ steps.coverage.outputs.coverage-rounded-display }}
-
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 16
-
-      - name: Manage cache
-        uses: actions/cache@v2.1.7
-        with:
-          path: |
-            ./node_modules
-          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('.github/workflows/*.yml') }}
-          restore-keys: |
-            ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
-            ${{ runner.OS }}-build
-      - name: npm test
-        run: npm run test:coverage:color
-
-      # Coverage badges will be updated on any branch
-      # and saved into a dedicated one
-      - name: Check test coverage
-        uses: johanvanhelden/gha-clover-test-coverage-check@v1
-        id: coverage
-        with:
-          percentage: 50
-          exit: 0
-          rounded-precision: 2
-          filename: './coverage/clover.xml'
 
   test-lint:
     timeout-minutes: 5
@@ -167,50 +131,13 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
             ${{ runner.OS }}-build
+
       - name: Get lint results
         run: npm run lint
 
-  test:
-    timeout-minutes: 5
-    name: Tests waiter
-    # No need to wait for deepsource test and report
-    needs: [test-code, test-build, test-lint]
-    runs-on: ubuntu-latest
-    outputs:
-      coverage: ${{ needs.test-code.outputs.coverage }}
-      coverage-rounded-display: ${{ needs.test-code.outputs.coverage-rounded-display }}
-    steps:
-      - name: Check test coverage
-        env:
-          COVERAGE: ${{ needs.test-code.outputs.coverage }}
-          COVERAGE_ROUNDED: ${{ needs.test-code.outputs.coverage-rounded-display }}
-        run: |
-          echo "Coverage: ${COVERAGE}"
-          echo "Coverage Rounded: ${COVERAGE_ROUNDED}"
-  comment_pr:
-    timeout-minutes: 5
-    name: Comment on PR with test coverage value
-    needs: [test, pre_ci]
-    if: ${{ github.actor != 'dependabot[bot]' && github.event_name == 'pull_request' && !contains(needs.pre_ci.outputs.commit_message, '#comment-badge') }}
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Generate comment file with test coverage
-        env:
-          COVERAGE: ${{ needs.test.outputs.coverage-rounded-display }}
-        run: |
-          echo "**Test coverage: ${COVERAGE}**" > output.md
-      - name: Comment PR with test coverage
-        uses: machine-learning-apps/pr-comment@1.0.0
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          path: output.md
-
   publish:
     name: Publish a new version of package via Semantic Release
-    needs: [test, pre_ci]
+    needs: [test-lint, test-build, pre_ci]
     timeout-minutes: 5
     if: ${{ github.ref == 'refs/heads/master' }}
 
@@ -231,6 +158,7 @@ jobs:
           restore-keys: |
             ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
             ${{ runner.OS }}-build
+
       - name: Prepare token
         run: echo "//npm.pkg.github.com/:_authToken=${GH_TOKEN}" >> .npmrc
         env:
