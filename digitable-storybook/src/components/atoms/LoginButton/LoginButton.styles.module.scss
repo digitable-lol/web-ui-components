@@ -1,0 +1,20 @@
+@import 'src/scss/mixins.scss';
+
+.loginButton {
+  @include mobile {
+    display: none;
+  }
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: $color-light-gray;
+  outline: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.75);
+  }
+}
