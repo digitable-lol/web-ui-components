@@ -1,11 +1,11 @@
 # Digitable-team / web-ui-components
 
-```shell
-cd storybook
+[Demo](https://digitable-team.github.io/web-ui-components/)
 
-npm start
+## Development
+
+```shell
+npm ci
   
 npm run storybook
 ```
-
-[Link to Storybook](https://digitable-team.github.io/web-ui-components/?path=/story/example-introduction--page)
