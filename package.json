@@ -146,7 +146,7 @@
     "@storybook/node-logger": "^6.4.19",
     "@storybook/preset-create-react-app": "^4.1.0",
     "@storybook/react": "^6.4.19",
-    "@storybook/storybook-deployer": "^2.8.10",
+    "@storybook/storybook-deployer": "^2.8.11",
     "@storybook/testing-library": "^0.0.9",
     "@svgr/rollup": "^6.2.1",
     "@svgr/webpack": "^6.2.1",
