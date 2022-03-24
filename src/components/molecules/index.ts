@@ -1,3 +1,3 @@
 export function initial(): void {
-    console.log('for build') 
+  console.log('for build')
 }
