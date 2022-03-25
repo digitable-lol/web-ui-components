@@ -174,38 +174,3 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: npx semantic-release
-
-  deploy-storybook:
-    name: Update storybook
-    needs: [test-lint, test-build, pre_ci]
-    timeout-minutes: 5
-    if: ${{ github.ref == 'refs/heads/master' }}
-
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 16
-
-      - name: Manage cache
-        uses: actions/cache@v2.1.7
-        with:
-          path: |
-            ./node_modules
-          key: ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('.github/workflows/*.yml') }}
-          restore-keys: |
-            ${{ runner.OS }}-build-${{ hashFiles('**/package-lock.json') }}
-            ${{ runner.OS }}-build
-
-      - name: Prepare token
-        run: echo "//npm.pkg.github.com/:_authToken=${GH_TOKEN}" >> .npmrc
-        env:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-
-      - name: Build storybook
-        run: npm run build-storybook
-      
-      - name: Deploy storybook
-        run: npm run deploy-storybook -- --ci
