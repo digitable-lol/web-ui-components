@@ -1,1 +1,3 @@
-export { LoginButton } from './atoms/LoginButton'
+import { LoginButton } from './atoms/LoginButton'
+
+export default { LoginButton }
