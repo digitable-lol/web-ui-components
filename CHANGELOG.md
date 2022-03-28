@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Digitable-team/web-ui-components/compare/v1.2.0...v1.3.0) (2022-03-28)
+
+
+### Features
+
+* addiiton Image Component in Storybook ([9a888e8](https://github.com/Digitable-team/web-ui-components/commit/9a888e8d46a599f05d4ecc21f4af71d88eab77b9))
+
 # [1.2.0](https://github.com/Digitable-team/web-ui-components/compare/v1.1.0...v1.2.0) (2022-03-17)
 
 
