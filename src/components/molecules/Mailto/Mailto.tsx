@@ -1,7 +1,5 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
-
 import css from './Mailto.styles.module.scss'
 
 export type MailtoProps = {
@@ -14,8 +12,8 @@ export const Mailto = ({ mailto, label, title }: MailtoProps) => {
   return (
     <div className={css.mailto}>
       <p className={css.title}>{title}</p>
-      <Link
-        to="#"
+      <a
+        href="#"
         onClick={event => {
           window.location.href = mailto
           event.preventDefault()
@@ -23,7 +21,7 @@ export const Mailto = ({ mailto, label, title }: MailtoProps) => {
         className={css.label}
       >
         {label}
-      </Link>
+      </a>
     </div>
   )
 }
