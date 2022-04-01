@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/Digitable-team/web-ui-components/compare/v1.4.0...v1.5.0) (2022-04-01)
+
+
+### Features
+
+* add structure to imports ([b8bb194](https://github.com/Digitable-team/web-ui-components/commit/b8bb1947e4993e549c1ec75ac3c9827f079cc22b))
+* resolve rollup commonjs ([7983dc0](https://github.com/Digitable-team/web-ui-components/commit/7983dc0b6fbbbe05eb46b5c584463947ead4ebca))
+
 # [1.4.0](https://github.com/Digitable-team/web-ui-components/compare/v1.3.0...v1.4.0) (2022-04-01)
 
 
