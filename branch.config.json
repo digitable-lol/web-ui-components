@@ -1,18 +1,19 @@
 {
   "branchNameLinter": {
     "prefixes": [
+      "refactor",
       "feature",
       "fix",
-      "feature/WEB-",
+      "feature/WUC-",
       "hotfix",
-      "fix/WEB-",
+      "fix/WUC-",
       "components/v"
     ],
     "suggestions": {
       "components": "components/v0.0.1",
-      "features": "feature/WEB-",
-      "feat": "feature/WEB-",
-      "fix": "fix/WEB-",
+      "features": "feature/WUC-",
+      "feat": "feature/WUC-",
+      "fix": "fix/WUC-",
       "hotfix": "hotfix/"
     },
     "banned": [
