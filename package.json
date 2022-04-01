@@ -164,6 +164,7 @@
     "@babel/preset-typescript": "^7.16.7",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
+    "@rollup/plugin-commonjs": "^21.0.3",
     "@storybook/addon-actions": "^6.4.19",
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-interactions": "^6.4.19",
@@ -326,7 +327,6 @@
       "npm run stylelint:css:fix",
       "git add"
     ],
-    "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write"
   }
 }
