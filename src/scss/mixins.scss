@@ -1,3 +1,5 @@
-@import './mixins/_breakpoint.scss';
-@import './mixins/_browsers.scss';
-@import './mixins/_user.scss';
+@import './mixins/breakpoint';
+@import './mixins/browsers';
+@import './mixins/user';
+@import './mixins/background-gradient';
+@import './mixins/layouts';
