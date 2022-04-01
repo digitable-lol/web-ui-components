@@ -1,5 +1,3 @@
-import { Image } from './components/atoms/Image'
-import { LoginButton } from './components/atoms/LoginButton'
-import { Text } from './components/atoms/Text'
+import * as components from './components'
 
-export default { Image, LoginButton, Text }
+export default components
