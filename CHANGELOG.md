@@ -1,3 +1,12 @@
+# [1.4.0](https://github.com/Digitable-team/web-ui-components/compare/v1.3.0...v1.4.0) (2022-04-01)
+
+
+### Features
+
+* migration of Container ([72665fe](https://github.com/Digitable-team/web-ui-components/commit/72665fe069d707807e4bdd05c3d52395833849ff))
+* migration of mailto ([fc53aa2](https://github.com/Digitable-team/web-ui-components/commit/fc53aa2fe7f61e8b885d6a1eb3738aacfac294e8))
+* **story:** add mailto ([5cd1ba8](https://github.com/Digitable-team/web-ui-components/commit/5cd1ba8f27c2300bc8a8bf1716d1a79aab680515))
+
 # [1.3.0](https://github.com/Digitable-team/web-ui-components/compare/v1.2.0...v1.3.0) (2022-03-28)
 
 
