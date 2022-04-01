@@ -138,7 +138,8 @@
         "assets": [
           "package.json",
           "package-lock.json",
-          "CHANGELOG.md"
+          "CHANGELOG.md",
+          "src/scss/**/*.scss"
         ],
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
@@ -147,7 +148,8 @@
   "files": [
     "README.md",
     "LICENSE",
-    "dist"
+    "dist",
+    "src/scss"
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
