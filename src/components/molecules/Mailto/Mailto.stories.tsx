@@ -2,6 +2,8 @@ import React from 'react'
 
 import { ComponentStory, ComponentMeta } from '@storybook/react'
 
+import { withRouter } from 'src/hooks/router'
+
 import { Mailto, MailtoProps } from './Mailto'
 
 export default {
@@ -9,7 +11,10 @@ export default {
   component: Mailto
 } as ComponentMeta<React.ComponentType<MailtoProps>>
 
-const Template: ComponentStory<React.ComponentType<MailtoProps>> = args => <Mailto {...args} />
+const Template: ComponentStory<React.ComponentType<MailtoProps>> = args => withRouter(<Mailto {...args} />)
 
 export const Primary = Template.bind({})
-Primary.args = {}
+Primary.args = {
+  mailto: 'support@digitable.ru',
+  label: 'support'
+}
