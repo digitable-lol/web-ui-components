@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/Digitable-team/web-ui-components/compare/v1.5.0...v1.6.0) (2022-04-01)
+
+
+### Features
+
+* replace absolute path per scss ([3c22a52](https://github.com/Digitable-team/web-ui-components/commit/3c22a52d1e2e3bcab8f9d406d4fcd9aece063ab4))
+
 # [1.5.0](https://github.com/Digitable-team/web-ui-components/compare/v1.4.0...v1.5.0) (2022-04-01)
 
 
