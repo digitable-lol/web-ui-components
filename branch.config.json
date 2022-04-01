@@ -1,0 +1,35 @@
+{
+  "branchNameLinter": {
+    "prefixes": [
+      "feature",
+      "fix",
+      "feature/WEB-",
+      "hotfix",
+      "fix/WEB-",
+      "components/v"
+    ],
+    "suggestions": {
+      "components": "components/v0.0.1",
+      "features": "feature/WEB-",
+      "feat": "feature/WEB-",
+      "fix": "fix/WEB-",
+      "hotfix": "hotfix/"
+    },
+    "banned": [
+      "wip"
+    ],
+    "skip": [
+      "skip-ci"
+    ],
+    "disallowed": [
+      "master",
+      "stage"
+    ],
+    "separator": "/",
+    "msgBranchBanned": "Branches with the name \"%s\" are not allowed.",
+    "msgBranchDisallowed": "Pushing to \"%s\" is not allowed, use git-flow.",
+    "msgPrefixNotAllowed": "Branch prefix \"%s\" is not allowed.",
+    "msgPrefixSuggestion": "Instead of \"%s\" try \"%s\".",
+    "msgseparatorRequired": "Branch \"%s\" must contain a separator \"%s\"."
+  }
+}

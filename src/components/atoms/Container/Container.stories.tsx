@@ -13,5 +13,5 @@ const Template: ComponentStory<React.ComponentType<ContainerProps>> = args => <C
 
 export const Primary = Template.bind({})
 Primary.args = {
-  children: "Hello world"
+  children: 'Hello world'
 }
