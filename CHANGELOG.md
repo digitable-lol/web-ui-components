@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/Digitable-team/web-ui-components/compare/v1.6.0...v1.7.0) (2022-04-01)
+
+
+### Features
+
+* resolve mailto ref to react-router-dom ([ae9d64b](https://github.com/Digitable-team/web-ui-components/commit/ae9d64b705effcdfb31dfdcbc6995f1d6a6004a6))
+
 # [1.6.0](https://github.com/Digitable-team/web-ui-components/compare/v1.5.0...v1.6.0) (2022-04-01)
 
 
