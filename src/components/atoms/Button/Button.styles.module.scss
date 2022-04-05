@@ -1,0 +1,29 @@
+@import 'src/scss/mixins';
+
+.primary {
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 18px 40px;
+  background: transparent;
+  color: #fff;
+}
+
+.success {
+  border: 1px solid $color-base;
+  border-radius: 50px;
+  background: transparent;
+  color: $color-base;
+
+  &:hover {
+    background: rgba(transparent 0.9);
+  }
+}
+
+.round {
+  border-radius: 36px;
+}
+
+.disabled {
+  color: $color-secondary;
+  border-color: $color-secondary;
+}
