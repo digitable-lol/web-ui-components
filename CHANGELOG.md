@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/Digitable-team/web-ui-components/compare/v1.8.0...v1.9.0) (2022-04-20)
+
+
+### Features
+
+* get rid of extended comments per class props ([a4fa980](https://github.com/Digitable-team/web-ui-components/commit/a4fa980429137f7bad473b626d2fd26aa3531d83))
+
 # [1.8.0](https://github.com/Digitable-team/web-ui-components/compare/v1.7.0...v1.8.0) (2022-04-20)
 
 
