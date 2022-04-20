@@ -8,8 +8,6 @@ export type MailtoProps = {
   mailto: string
   label: string
   title: string
-
-  // Extend props
   classNameMailto?: string
   classNameTitle?: string
   classNameLabel?: string
