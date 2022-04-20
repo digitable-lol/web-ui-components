@@ -9,3 +9,7 @@ npm ci
   
 npm run storybook
 ```
+
+## Versions
+
+Package version will be updated automatically via `semantic-release`
