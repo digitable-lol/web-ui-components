@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/Digitable-team/web-ui-components/compare/v1.7.0...v1.8.0) (2022-04-20)
+
+
+### Features
+
+* **mailto:** extend classNames ([39986c1](https://github.com/Digitable-team/web-ui-components/commit/39986c14fcf74c6c17c2d09c0fe1acd33e5eaa95))
+
 # [1.7.0](https://github.com/Digitable-team/web-ui-components/compare/v1.6.0...v1.7.0) (2022-04-01)
 
 
