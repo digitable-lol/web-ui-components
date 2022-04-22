@@ -2,9 +2,9 @@
 
 .mailto {
   @include flex-center;
-  @include font-size;
 
   margin: 15px 12px;
+  font-size: 22px;
 
   @include mobile {
     width: 100%;
