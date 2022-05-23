@@ -1,0 +1,27 @@
+@import 'src/scss/mixins';
+
+.drop-down-list,
+.container {
+  @include flex-center;
+}
+
+.drop-down-list {
+  width: 260px;
+  height: 50px;
+  border: 3px solid $color-base;
+  margin: 15px;
+  border-radius: 20px;
+}
+
+.header {
+  font-size: 28px;
+  color: $color-base;
+  font-family: $font-inter;
+  font-weight: 500;
+}
+
+.container {
+  min-width: 260px;
+  flex-flow: wrap;
+  color: $color-background-black;
+}
