@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon.utils should match snapshot 1`] = `
+Object {
+  "call": "svg",
+  "catalog": "svg",
+  "close": "svg",
+  "delivery": "svg",
+  "dollar": "svg",
+  "domain": "svg",
+  "envelope": "svg",
+  "facebook": "svg",
+  "gamepad": "svg",
+  "github": "svg",
+  "graphics": "svg",
+  "guality": "svg",
+  "home": "svg",
+  "house": "svg",
+  "modules": "svg",
+  "motherboard": "svg",
+  "processor": "svg",
+  "ram": "svg",
+  "star": "svg",
+  "telegram": "svg",
+  "tool": "svg",
+  "twitter": "svg",
+  "vector": "svg",
+  "videocard": "svg",
+  "vkontakte": "svg",
+  "work": "svg",
+}
+`;
