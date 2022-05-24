@@ -11,7 +11,7 @@
     "moduleResolution": "node",
     "target": "ESNext",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "module": "ESNext",
     "declaration": true,
     "declarationDir": "types",
