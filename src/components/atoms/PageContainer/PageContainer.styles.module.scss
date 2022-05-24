@@ -1,0 +1,26 @@
+@import 'src/scss/mixins';
+
+.page-container {
+  display: flex;
+  flex-flow: wrap;
+  position: relative;
+  height: auto;
+  width: 100%;
+  background-image: url('../../../../public/images/common/ellipse-background.png');
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+
+  @include desktop {
+    padding: 0 110px 100px;
+    background-image: none;
+  }
+
+  @include tablet {
+    background-size: 100% 20%;
+  }
+
+  @include mobile {
+    background-size: 100% 20%;
+  }
+}
