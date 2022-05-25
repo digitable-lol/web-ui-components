@@ -1,0 +1,30 @@
+@import 'src/scss/mixins';
+
+.heading {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+
+  @include desktop {
+    margin-top: 80px;
+  }
+
+  @include devices {
+    margin-top: 20px;
+  }
+}
+
+.text {
+  font-family: $font-lato;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 58px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.text-color {
+  color: $color-base;
+}
