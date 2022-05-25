@@ -1,0 +1,7 @@
+@import 'src/scss/mixins';
+
+.slider {
+  @include flex-center;
+
+  width: 100%;
+}
