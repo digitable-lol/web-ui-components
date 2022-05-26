@@ -1,3 +1,27 @@
+# [1.10.0](https://github.com/Digitable-team/web-ui-components/compare/v1.9.0...v1.10.0) (2022-05-26)
+
+
+### Bug Fixes
+
+* delete hamburger empty utils ([63ba011](https://github.com/Digitable-team/web-ui-components/commit/63ba011e45ea2b6fa9175c35fbc3162f74fe5ecf))
+* resolve conflict with package lock file ([2775a7f](https://github.com/Digitable-team/web-ui-components/commit/2775a7fd9955ccbb9a822476d3adf991985f58aa))
+* update package lock ([bcab014](https://github.com/Digitable-team/web-ui-components/commit/bcab0142b412c1f1cc2635435776556fb2280b6f))
+
+
+### Features
+
+* add button stories for storybook ([3846d4c](https://github.com/Digitable-team/web-ui-components/commit/3846d4c076a72dc71c03000f8df2b42503a40847))
+* relocate Button atom from WEB ([2da788b](https://github.com/Digitable-team/web-ui-components/commit/2da788b861d4acb10551fe7757166fb5bd66c6ad))
+* relocate DropDownList atom from WEB ([e524c38](https://github.com/Digitable-team/web-ui-components/commit/e524c3863ea1a74d33d4d9f614f74491573493d4))
+* relocate EmptyBasket atom from WEB ([eee03b6](https://github.com/Digitable-team/web-ui-components/commit/eee03b6e1e6e8f4386b56709684cffa6e8dc6438))
+* relocate HamburgerMenu atom from WEB ([c7e0de4](https://github.com/Digitable-team/web-ui-components/commit/c7e0de4f8297ae3945a4916b5404366f79991829))
+* relocate Icon atom from WEB ([b4d73e2](https://github.com/Digitable-team/web-ui-components/commit/b4d73e2c44e1aaea6909ce348d95019c38bd08f4))
+* relocate images for Icon utils from WEB ([ae9117b](https://github.com/Digitable-team/web-ui-components/commit/ae9117bc2f5c6e224090adb6913908875cff1b04))
+* relocate PageContainer atom from web ([136cf0c](https://github.com/Digitable-team/web-ui-components/commit/136cf0cad03051c16a769f9b0dd94faccc518040))
+* relocate Slider atom from web ([3a5760b](https://github.com/Digitable-team/web-ui-components/commit/3a5760b6a5687eec1a933f691d965a69ab1a60f4))
+* relocate TitleBlock component from web ([292676b](https://github.com/Digitable-team/web-ui-components/commit/292676b58c872d12b637984da40c677fa30b219a))
+* update index for other imports ([171285c](https://github.com/Digitable-team/web-ui-components/commit/171285c64f784903b4b2eaf6fe4a30c654327e6d))
+
 # [1.9.0](https://github.com/Digitable-team/web-ui-components/compare/v1.8.0...v1.9.0) (2022-04-20)
 
 
