@@ -1,0 +1,45 @@
+@import 'src/scss/mixins';
+
+.information-section {
+  display: flex;
+  flex-flow: wrap;
+  align-items: flex-start;
+
+  @include tablet {
+    align-items: flex-start;
+  }
+
+  @include mobile {
+    width: 90%;
+  }
+}
+
+.images,
+.blocks {
+  margin-top: 80px;
+}
+
+.blocks {
+  @include tablet {
+    width: 90%;
+    margin: 100px 20px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin: 30px 0 0 23px;
+  }
+}
+
+.images {
+  @include devices {
+    display: none;
+  }
+}
+
+.image {
+  @include desktop {
+    width: 450px;
+    height: 450px;
+  }
+}

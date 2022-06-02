@@ -1,0 +1,55 @@
+@import 'src/scss/mixins';
+
+.container {
+  display: flex;
+  justify-content: left;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 40px;
+
+  @include mobile {
+    margin-top: 0;
+    justify-content: center;
+  }
+}
+
+.block {
+  margin-top: 15px;
+
+  &:first-child {
+    margin-top: 30px;
+
+    @include mobile {
+      margin-top: 0;
+    }
+  }
+}
+
+.mailto {
+  @include flex-center;
+
+  @include mobile {
+    display: flex;
+    justify-content: left;
+    width: 90%;
+  }
+}
+
+.mailto-title,
+.mailto-label {
+  font-size: 22px;
+  line-height: 50px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 5px;
+
+  @include mobile {
+    font-size: 17px;
+    line-height: 32px;
+  }
+}
+
+.mailto-label {
+  color: $color-base;
+}
