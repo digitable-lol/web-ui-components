@@ -1,0 +1,124 @@
+@import 'src/scss/mixins';
+
+.header,
+.benefit,
+.container {
+  @include flex-center;
+}
+
+.benefit {
+  width: 380px;
+  border-radius: 26px;
+  background: $color-background-indigo;
+  margin-top: 40px;
+
+  @include desktop {
+    padding: 35px 0;
+    position: relative;
+
+    &:hover .emergence {
+      display: flex;
+    }
+  }
+
+  @include devices {
+    display: flex;
+    flex-flow: column;
+  }
+
+  @include tablet {
+    width: 380px;
+    height: 280px;
+  }
+}
+
+.benefit,
+.emergence {
+  cursor: pointer;
+}
+
+.header {
+  @include desktop {
+    width: 380px;
+    flex-flow: column;
+  }
+
+  @include tablet {
+    width: 90%;
+    justify-content: space-evenly;
+    flex-flow: row-reverse;
+  }
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+  margin: 30px;
+
+  @include devices {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+}
+
+.title {
+  color: $color-white;
+  font-family: $font-lato;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+
+  @include desktop {
+    font-size: 30px;
+  }
+
+  @include tablet {
+    font-size: 20px;
+  }
+}
+
+.container {
+  @include desktop {
+    width: 380px;
+  }
+
+  @include tablet {
+    width: 355px;
+  }
+}
+
+.content {
+  color: $color-light;
+  font-family: $font-lato;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  margin: 10px;
+  padding: 15px;
+
+  @include tablet {
+    font-size: 16px;
+    margin: 0;
+    padding: 13px;
+  }
+}
+
+.emergence {
+  @include desktop {
+    width: 100%;
+    border-radius: 26px;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    display: none;
+    position: absolute;
+    background: $color-background-indigo;
+  }
+
+  @include devices {
+    display: flex;
+  }
+}
