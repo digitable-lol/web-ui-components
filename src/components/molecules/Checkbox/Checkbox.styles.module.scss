@@ -1,0 +1,81 @@
+@import 'src/scss/mixins';
+
+.checkbox-container {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.information-block {
+  display: block;
+  width: 80%;
+  margin-left: 30%;
+}
+
+.checkbox {
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 34%;
+      width: 49px;
+      height: 23px;
+      border-radius: 13px;
+      background: $color-background-black;
+      transition: 0.2s;
+      border: 1px solid $color-white;
+
+      @include mobile {
+        width: 29px;
+        height: 13px;
+        margin-top: 8px;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 34%;
+      width: 23px;
+      height: 23px;
+      border-radius: 10px;
+      background: $color-base;
+      transition: 0.2s;
+
+      @include mobile {
+        width: 13px;
+        height: 13px;
+        margin-top: 8px;
+      }
+    }
+  }
+
+  &:checked + label {
+    &::before {
+      background: $color-base;
+    }
+
+    &::after {
+      left: 26px;
+      border: 1px solid $color-white;
+      background-color: $color-background-black;
+
+      @include mobile {
+        left: 16px;
+      }
+    }
+  }
+}
