@@ -1,3 +1,20 @@
+# [1.11.0](https://github.com/Digitable-team/web-ui-components/compare/v1.10.0...v1.11.0) (2022-06-05)
+
+
+### Bug Fixes
+
+* fix import for scss in Error code component ([12ef768](https://github.com/Digitable-team/web-ui-components/commit/12ef768ae6198b734710e184a084f65eeb9d3a6a))
+* update package lock ([86b6638](https://github.com/Digitable-team/web-ui-components/commit/86b6638dc2767dc3fc2c63a3bc42b2dac8786e9e))
+
+
+### Features
+
+* install react router dom ([63f44e4](https://github.com/Digitable-team/web-ui-components/commit/63f44e4c4293c01ed26a4ffbaf03fb9e30202047))
+* relocate Benefit component from web ([1357410](https://github.com/Digitable-team/web-ui-components/commit/1357410bc411933f8e5ace035356238297046080))
+* relocate ErrorCode component from web ([a4cff2a](https://github.com/Digitable-team/web-ui-components/commit/a4cff2a3bb5a5c8885fb2c9fde6ee8e992907a93))
+* relocate Geolocation component from web ([8b9d961](https://github.com/Digitable-team/web-ui-components/commit/8b9d961384e01109500d6c917ad0086ded411f0f))
+* relocate TextBlocks component from web ([4be092a](https://github.com/Digitable-team/web-ui-components/commit/4be092a53b33d8b32d49296e287677609d508a11))
+
 # [1.10.0](https://github.com/Digitable-team/web-ui-components/compare/v1.9.0...v1.10.0) (2022-05-26)
 
 
