@@ -68,7 +68,7 @@
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
     "chromatic": "^6.5.3",
     "classnames": "^2.3.1",
-    "commitlint": "^17.0.1",
+    "commitlint": "^17.0.3",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.2.0",
     "dotenv-expand": "^8.0.3",
