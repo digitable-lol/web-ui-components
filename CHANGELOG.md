@@ -1,3 +1,10 @@
+## [1.11.1](https://github.com/Digitable-team/web-ui-components/compare/v1.11.0...v1.11.1) (2022-07-12)
+
+
+### Bug Fixes
+
+* resolve Conrainer export for WEB ([#109](https://github.com/Digitable-team/web-ui-components/issues/109)) ([f0c7d1f](https://github.com/Digitable-team/web-ui-components/commit/f0c7d1f2e2cb34b8d950388ea4e3f3b54ab849c6))
+
 # [1.11.0](https://github.com/Digitable-team/web-ui-components/compare/v1.10.0...v1.11.0) (2022-06-05)
 
 
