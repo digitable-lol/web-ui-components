@@ -1,5 +1,6 @@
 export * from './Button'
 export * from './ColorTexts'
+export * from './Container'
 export * from './DropDownList'
 export * from './EmptyBasket'
 export * from './HamburgerMenu'
