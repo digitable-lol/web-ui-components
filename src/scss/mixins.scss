@@ -1,5 +1,4 @@
-@import './mixins/breakpoint';
-@import './mixins/browsers';
-@import './mixins/user';
-@import './mixins/background-gradient';
-@import './mixins/layouts';
+@import './variables/color';
+@import './variables/fonts';
+@import './media/media';
+@import './animation/hover-animation';
