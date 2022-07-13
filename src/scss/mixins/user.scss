@@ -1,0 +1,7 @@
+@mixin without-cursor {
+  cursor: none !important;
+}
+
+@mixin without-scroll {
+  overflow: hidden;
+}

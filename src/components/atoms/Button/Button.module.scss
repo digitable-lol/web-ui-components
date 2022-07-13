@@ -32,7 +32,7 @@
     color: $digitable-text-color;
     fill: $digitable-text-color;
 
-    @include HoverOpacity;
+    @include hover-opacity;
 
     &:hover {
       color: $digitable-cyan-color;
