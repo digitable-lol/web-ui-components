@@ -1,14 +1,13 @@
 import React from 'react'
 
 export type ImageProps = {
-  src?: string
+  src: string
   width?: string | number
   height?: string | number
+  alt: string
   className?: string
-  alt?: string
-  onClick?: () => void
 }
 
-export const Image = ({ src, className, alt, height, width, onClick }: ImageProps) => {
-  return <img className={className} onClick={onClick} alt={alt} src={src} width={width} height={height} />
-}
+export const Image = ({ src, width, height, alt, className }: ImageProps) => (
+  <img src={src} alt={alt} className={className} width={width} height={height} />
+)

@@ -17,21 +17,21 @@ import { ReactComponent as Vkontakte } from '../../../../public/images/Vk.svg'
 import { Icons } from './Icon.types'
 
 export const ICONS: Record<Icons | string, React.FunctionComponent> = {
+  [Icons.arrowAccordion]: ArrowAccordion,
+  [Icons.dollar]: Dollar,
+  [Icons.envelope]: Envelope,
+  [Icons.github]: Github,
+  [Icons.guality]: Guality,
   [Icons.intro]: Intro,
   [Icons.logo]: Logo,
   [Icons.logoAndText]: LogoAndText,
-  [Icons.user]: User,
-  [Icons.regru]: Regru,
-  [Icons.vkontakte]: Vkontakte,
-  [Icons.github]: Github,
-  [Icons.telegram]: Telegram,
-  [Icons.dollar]: Dollar,
-  [Icons.envelope]: Envelope,
-  [Icons.guality]: Guality,
   [Icons.modules]: Modules,
+  [Icons.regru]: Regru,
+  [Icons.user]: User,
+  [Icons.telegram]: Telegram,
   [Icons.tool]: Tool,
   [Icons.vector]: Vector,
-  [Icons.arrowAccordion]: ArrowAccordion
+  [Icons.vkontakte]: Vkontakte
 }
 
 export const getIcon = (name: Icons | string) => {

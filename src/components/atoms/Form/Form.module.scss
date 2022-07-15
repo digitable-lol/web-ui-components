@@ -1,0 +1,11 @@
+@import 'src/scss/mixins';
+
+.digitable-form {
+  width: auto;
+  background: $digitable-light-purple-color;
+  border-radius: 12px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
