@@ -9,7 +9,11 @@ import { getSections } from './InformationSection.utils'
 
 import css from './InformationSection.styles.module.scss'
 
-export const InformationSection = () => {
+export type InformationSectionProps = {
+  imageUrl: string
+}
+
+export const InformationSection = ({ imageUrl }: InformationSectionProps) => {
   const sections = getSections()
   return (
     <div className={css.informationSection}>
@@ -20,7 +24,7 @@ export const InformationSection = () => {
           })}
         </div>
         <div className={cx(css.images, 'col-md-4')}>
-          <Image src="/images/common/boxes.png" className={css.image} />
+          <Image src={imageUrl} alt={'image'} />
         </div>
       </div>
     </div>

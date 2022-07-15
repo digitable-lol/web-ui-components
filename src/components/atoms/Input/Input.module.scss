@@ -1,0 +1,33 @@
+@import 'src/scss/mixins';
+
+.digitable-input {
+  width: 100%;
+  height: 100%;
+  font-size: $digitable-text-size-second;
+  background: $digitable-dark-purple-color;
+  color: $digitable-text-color;
+  padding: 0 20px;
+  border-radius: 12px;
+  outline: none;
+  border: 0;
+
+  &__box {
+    border-radius: 12px;
+    height: 60px;
+    position: relative;
+    margin-bottom: 40px;
+    width: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_invalid {
+      border: 2px solid $digitable-border-error-color;
+    }
+
+    &_valid {
+      content: '';
+    }
+  }
+}

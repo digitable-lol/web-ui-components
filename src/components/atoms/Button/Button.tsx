@@ -2,8 +2,8 @@ import React, { ReactNode } from 'react'
 
 import cx from 'classnames'
 
-import { Size } from '../../types'
-import { Icon, Icons } from '../Icon'
+import { Icon, Icons } from 'src/components/atoms/Icon'
+import { Size } from 'src/components/types'
 
 import { ButtonColor } from './types'
 

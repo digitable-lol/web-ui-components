@@ -19,7 +19,7 @@ export const ErrorCode = ({ imageUrl, leftNumber, rightNumber, simpleText, highl
   return (
     <div className={css.error}>
       <span className={css.numeric}>{leftNumber}</span>
-      <Image src={imageUrl} width="568" height="568" />
+      <Image src={imageUrl} alt={'image'} />
       <span className={css.numeric}>{rightNumber}</span>
       <div className={css.box}>
         <span className={css.text}>{simpleText}</span>

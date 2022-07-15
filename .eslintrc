@@ -9,7 +9,6 @@
     "airbnb/hooks",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "plugin:css-modules/recommended",
     "plugin:prettier/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
@@ -38,7 +37,7 @@
       }
     }
   },
-  "plugins": ["react", "@typescript-eslint", "import", "css-modules", "github"],
+  "plugins": ["react", "@typescript-eslint", "import", "github"],
   "rules": {
     "jsx-a11y/media-has-caption": "off",
     "import/order": [
@@ -119,18 +118,6 @@
     "jsx-a11y/img-redundant-alt": "off",
     "jsx-a11y/iframe-has-title": "off",
     "jsx-a11y/label-has-associated-control": "off",
-    "css-modules/no-unused-class": [
-      2,
-      {
-        "camelCase": true
-      }
-    ],
-    "css-modules/no-undef-class": [
-      2,
-      {
-        "camelCase": true
-      }
-    ],
     "@typescript-eslint/no-floating-promises": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
     "@typescript-eslint/no-unused-expressions": "off",
