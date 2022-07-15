@@ -1,71 +1,37 @@
-// benefit
-import DollarImage from '../../../../public/images/benefit/dollar.svg'
-import EnvelopeImage from '../../../../public/images/benefit/envelope.svg'
-import GualityImage from '../../../../public/images/benefit/guality.svg'
-import ModulesImage from '../../../../public/images/benefit/modules.svg'
-import ToolImage from '../../../../public/images/benefit/tool.svg'
-import VectorImage from '../../../../public/images/benefit/vector.svg'
-
-// common
-import CloseImage from '../../../../public/images/common/close.svg'
-import DomainImage from '../../../../public/images/common/domain.svg'
-import GamepadImage from '../../../../public/images/common/gamepad.svg'
-import GraphicsImage from '../../../../public/images/common/graphics.svg'
-
-import HouseImage from '../../../../public/images/common/house.svg'
-import MotherboardImage from '../../../../public/images/common/motherboard.svg'
-import ProcessorImage from '../../../../public/images/common/processor.svg'
-import RamImage from '../../../../public/images/common/ram.svg'
-import StarImage from '../../../../public/images/common/star.svg'
-import VideocardImage from '../../../../public/images/common/videocard.svg'
-import WorkImage from '../../../../public/images/common/work.svg'
-
-// navLinks
-import CallImage from '../../../../public/images/navLinks/call.svg'
-import CatalogImage from '../../../../public/images/navLinks/catalog.svg'
-import DeliveryImage from '../../../../public/images/navLinks/delivery.svg'
-import HomeImage from '../../../../public/images/navLinks/home.svg'
-
-// social
-import FacebookImage from '../../../../public/images/social/facebook.svg'
-import GithubImage from '../../../../public/images/social/github.svg'
-import TelegramImage from '../../../../public/images/social/telegram.svg'
-import TwitterImage from '../../../../public/images/social/twitter.svg'
-import VKImage from '../../../../public/images/social/vkontakte.svg'
+import { ReactComponent as ArrowAccordion } from '../../../../public/images/ArrowAccordion.svg'
+import { ReactComponent as Dollar } from '../../../../public/images/Benefits/Dollar.svg'
+import { ReactComponent as Envelope } from '../../../../public/images/Benefits/Envelope.svg'
+import { ReactComponent as Guality } from '../../../../public/images/Benefits/Guality.svg'
+import { ReactComponent as Modules } from '../../../../public/images/Benefits/Modules.svg'
+import { ReactComponent as Tool } from '../../../../public/images/Benefits/Tool.svg'
+import { ReactComponent as Vector } from '../../../../public/images/Benefits/Vector.svg'
+import { ReactComponent as Github } from '../../../../public/images/Github.svg'
+import { ReactComponent as Intro } from '../../../../public/images/Intro.svg'
+import { ReactComponent as Logo } from '../../../../public/images/Logo.svg'
+import { ReactComponent as LogoAndText } from '../../../../public/images/LogoAndText.svg'
+import { ReactComponent as Regru } from '../../../../public/images/Regru.svg'
+import { ReactComponent as Telegram } from '../../../../public/images/Telegram.svg'
+import { ReactComponent as User } from '../../../../public/images/User.svg'
+import { ReactComponent as Vkontakte } from '../../../../public/images/Vk.svg'
 
 import { Icons } from './Icon.types'
 
-export const ICONS: Record<Icons | string, string> = {
-  [Icons.telegram]: TelegramImage,
-  [Icons.facebook]: FacebookImage,
-  [Icons.vkontakte]: VKImage,
-  [Icons.twitter]: TwitterImage,
-  [Icons.github]: GithubImage,
-  // common
-  [Icons.gamepad]: GamepadImage,
-  [Icons.work]: WorkImage,
-  [Icons.house]: HouseImage,
-  [Icons.star]: StarImage,
-  [Icons.domain]: DomainImage,
-  [Icons.graphics]: GraphicsImage,
-  // details
-  [Icons.processor]: ProcessorImage,
-  [Icons.motherboard]: MotherboardImage,
-  [Icons.videocard]: VideocardImage,
-  [Icons.ram]: RamImage,
-  [Icons.close]: CloseImage,
-  // navLinks
-  [Icons.call]: CallImage,
-  [Icons.catalog]: CatalogImage,
-  [Icons.delivery]: DeliveryImage,
-  [Icons.home]: HomeImage,
-  // benefit
-  [Icons.dollar]: DollarImage,
-  [Icons.guality]: GualityImage,
-  [Icons.tool]: ToolImage,
-  [Icons.modules]: ModulesImage,
-  [Icons.vector]: VectorImage,
-  [Icons.envelope]: EnvelopeImage
+export const ICONS: Record<Icons | string, React.FunctionComponent> = {
+  [Icons.intro]: Intro,
+  [Icons.logo]: Logo,
+  [Icons.logoAndText]: LogoAndText,
+  [Icons.user]: User,
+  [Icons.regru]: Regru,
+  [Icons.vkontakte]: Vkontakte,
+  [Icons.github]: Github,
+  [Icons.telegram]: Telegram,
+  [Icons.dollar]: Dollar,
+  [Icons.envelope]: Envelope,
+  [Icons.guality]: Guality,
+  [Icons.modules]: Modules,
+  [Icons.tool]: Tool,
+  [Icons.vector]: Vector,
+  [Icons.arrowAccordion]: ArrowAccordion
 }
 
 export const getIcon = (name: Icons | string) => {

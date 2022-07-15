@@ -1,37 +1,17 @@
 export enum Icons {
-  // social
-  telegram = 'telegram',
-  facebook = 'facebook',
+  logo = 'logo',
+  logoAndText = 'logoAndText',
+  intro = 'intro',
+  user = 'user',
+  regru = 'regru',
   vkontakte = 'vkontakte',
-  twitter = 'twitter',
   github = 'github',
-
-  // common
-  gamepad = 'gamepad',
-  work = 'work',
-  house = 'house',
-  star = 'star',
-  domain = 'domain',
-  graphics = 'graphics',
-
-  // details
-  processor = 'processor',
-  motherboard = 'motherboard',
-  videocard = 'videocard',
-  ram = 'ram',
-  close = 'close',
-
-  // navLinks
-  call = 'call',
-  catalog = 'catalog',
-  delivery = 'delivery',
-  home = 'home',
-
-  // benefit
+  telegram = 'telegram',
   dollar = 'dollar',
-  guality = 'guality',
+  envelope = 'envelope',
   tool = 'tool',
-  modules = 'modules',
   vector = 'vector',
-  envelope = 'envelope'
+  guality = 'guality',
+  modules = 'modules',
+  arrowAccordion = 'arrowAccordion'
 }

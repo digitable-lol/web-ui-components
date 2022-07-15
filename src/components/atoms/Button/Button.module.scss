@@ -1,0 +1,68 @@
+@import 'src/scss/mixins';
+
+.digitable-button {
+  text-decoration: none;
+  font-size: 20px;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  fill: $digitable-text-color;
+
+  &__small {
+    font-size: $digitable-text-size-first;
+    padding: 5px 7px;
+    font-weight: $digitable-text-weight-first;
+  }
+
+  &__medium {
+    font-size: $digitable-text-size-second;
+    padding: 10px 30px;
+    font-weight: $digitable-text-weight-second;
+  }
+
+  &__large {
+    font-size: $digitable-text-size-third;
+    padding: 10px 20px;
+    font-weight: $digitable-text-weight-third;
+  }
+
+  &__purple {
+    background: $digitable-purple-color;
+    border-radius: 20px;
+    color: $digitable-text-color;
+    fill: $digitable-text-color;
+
+    @include hover-opacity;
+
+    &:hover {
+      color: $digitable-cyan-color;
+      animation: animation-button__pulse-purple 2s infinite;
+    }
+  }
+
+  &__default {
+    border-radius: 5px;
+    transition: border 0.5s ease-in-out;
+    background: $digitable-dark-purple-color;
+    color: $digitable-text-color;
+    fill: $digitable-text-color;
+  }
+
+  &__icon {
+    content: '';
+  }
+}
+
+@keyframes animation-button-pulse-purple {
+  0% {
+    box-shadow: 0 0 0 0 $digitable-dark-purple-color;
+  }
+
+  70% {
+    box-shadow: 0 0 0 15px $digitable-dark-purple-color opacity 0%;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 $digitable-dark-purple-color opacity 0%;
+  }
+}

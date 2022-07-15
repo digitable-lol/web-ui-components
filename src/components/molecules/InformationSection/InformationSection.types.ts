@@ -1,4 +1,4 @@
 export type InformationBlockContent = {
   header?: string
-  texts?: string[]
+  texts: string[]
 }
