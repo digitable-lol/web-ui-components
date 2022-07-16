@@ -1,0 +1,43 @@
+@import 'src/scss/mixins';
+
+.digitable-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 52px;
+  height: 52px;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__open {
+    :first-child {
+      transform: rotate(45deg);
+    }
+
+    :nth-child(2) {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+
+    :nth-child(3) {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__line {
+    width: 32px;
+    height: 4px;
+    background: $digitable-cyan-color;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+}
