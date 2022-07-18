@@ -1,0 +1,29 @@
+@import 'src/scss/mixins';
+
+.digitable-heading {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  &__small {
+    font-size: $digitable-heading-size-first;
+    font-weight: $digitable-text-weight-first;
+  }
+
+  &__medium {
+    font-size: $digitable-heading-size-second;
+    font-weight: $digitable-text-weight-second;
+  }
+
+  &__large {
+    font-size: $digitable-heading-size-third;
+    font-weight: $digitable-text-weight-third;
+  }
+
+  &__default {
+    color: $digitable-text-color;
+  }
+
+  &__turquoise {
+    color: $digitable-heading-color;
+  }
+}
