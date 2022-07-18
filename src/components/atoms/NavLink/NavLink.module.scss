@@ -6,27 +6,7 @@
   font-size: $digitable-text-size-third;
   transition: color 0.5s ease-in-out;
 
-  // animation: animation-iridescent-color 2s linear infinite;
-
   &:hover {
     color: $digitable-link-hover-color;
   }
 }
-
-// @keyframes animation-iridescent-color {
-//   0% {
-//     color: $digitable-first-white-color;
-//   }
-//   25% {
-//     color: $digitable-second-white-color;
-//   }
-//   50% {
-//     color: $digitable-cyan-color;
-//   }
-//   75% {
-//     color: $digitable-second-white-color;
-//   }
-//   100% {
-//     color: $digitable-first-white-color;
-//   }
-// }
