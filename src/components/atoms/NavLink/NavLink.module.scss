@@ -1,0 +1,12 @@
+@import 'src/scss/mixins';
+
+.digitable-nav-link {
+  text-decoration: none;
+  color: $digitable-text-color;
+  font-size: $digitable-text-size-third;
+  transition: color 0.5s ease-in-out;
+
+  &:hover {
+    color: $digitable-link-hover-color;
+  }
+}
