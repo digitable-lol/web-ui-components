@@ -1,0 +1,9 @@
+@import 'src/scss/mixins';
+
+.digitable-content {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+
+  @include large-desktop;
+}
