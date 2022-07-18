@@ -1,0 +1,36 @@
+@import 'src/scss/mixins';
+
+.digitable-text {
+  &__small {
+    font-size: $digitable-text-size-first;
+    font-weight: $digitable-text-weight-first;
+  }
+
+  &__medium {
+    font-size: $digitable-text-size-second;
+    font-weight: $digitable-text-weight-second;
+  }
+
+  &__large {
+    font-size: $digitable-text-size-third;
+    font-weight: $digitable-text-weight-third;
+  }
+
+  &__default {
+    color: $digitable-text-color;
+  }
+
+  &__light {
+    &_gray {
+      color: $digitable-light-gray-color;
+    }
+  }
+
+  &__cyan {
+    color: $digitable-cyan-color;
+  }
+
+  &__black {
+    color: $digitable-dark-color;
+  }
+}
